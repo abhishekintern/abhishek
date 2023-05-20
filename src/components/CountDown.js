@@ -6,7 +6,9 @@ const CountdownTimer = () => {
   useEffect(() => {
     const fetchCountdownValue = async () => {
       try {
-        const response = await fetch("http://localhost:3000/api/timer");
+        const response = await fetch(
+          "https://abhishek-rho.vercel.app/api/timer"
+        );
         const data = await response.json();
         // console.log(data);
         let seconds = data.countdown * 60;
