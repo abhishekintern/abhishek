@@ -21,8 +21,8 @@ const TypingEffect = () => {
   }, []);
 
   return (
-    <div className="text-center py-8">
-      <h1 className="text-3xl font-bold">{text}</h1>
+    <div className="text-left py-8">
+      <h1 className="text-3xl text-left font-bold">{text}</h1>
     </div>
   );
 };
