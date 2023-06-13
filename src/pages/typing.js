@@ -16,6 +16,7 @@ const TypingEffect = ({ message = "" }) => {
     return () => {
       clearInterval(typingInterval);
     };
+    // eslint-disable-next-line
   }, []);
 
   return <p className="text-left py-8">{text}</p>;
