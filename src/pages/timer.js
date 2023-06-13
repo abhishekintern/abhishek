@@ -2,7 +2,7 @@ import useGetCountdown from "@/hooks/useGetCountdown";
 import { useEffect, useState } from "react";
 
 const Timer = () => {
-  const apiUrl = "http://localhost:3000/api/timer";
+  const apiUrl = "http://localhost:3001/api/timer";
   const seconds = useGetCountdown(apiUrl);
   const [countdown, setCountdown] = useState(seconds);
 
@@ -32,12 +32,7 @@ const Timer = () => {
       .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
   };
 
-  return (
-    <div className="w-full h-full flex items-center justify-center flex-col">
-      <h1>My Countdown Timer</h1>
-      <p>{formatCountdown()}</p>
-    </div>
-  );
+  return <p>{formatCountdown()}</p>;
 };
 
 export default Timer;
