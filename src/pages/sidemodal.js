@@ -33,12 +33,7 @@ const Sidebar = () => {
                 <Dialog.Overlay className="fixed inset-0 bg-black bg-opacity-25 w-1/2" />
 
                 <div className="bg-white p-6 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-md w-full rounded-2xl shadow-xl">
-                  <Dialog.Title
-                    as="h3"
-                    className="text-lg font-medium leading-6 text-gray-900"
-                  >
-                    Payment successful
-                  </Dialog.Title>
+                  
                   <div className="mt-2">
                     <p className="text-sm text-gray-500">
                       Your payment has been successfully submitted. We’ve sent
